@@ -3,6 +3,8 @@ class Node:
         self.val=val
         self.left=None
         self.right=None
+        
+        
 def level_order_traversal(root):
     if root is None:
         return []
@@ -18,9 +20,6 @@ def level_order_traversal(root):
         current = next_level
         result.append(vals)
     return result
-
-
-
 
 root=Node(1)
 root.left=Node(2)
